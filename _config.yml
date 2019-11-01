@@ -16,8 +16,8 @@
 title: "Denis Nefedov" #"Hello. I'm Denis Nefedov"
 email: 'nefedov.d.d@gmail.com'
 description: ""
-#baseurl: "" # the subpath of your site, e.g. /blog
-#url: "https://le0nx.github.io/site" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://le0nx.github.io/site" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 'MastrSplyntr'
 github_username: 'Le0nX'
 medium_username: 'medium.com/you-gotta-get-schwifty' #'blog.jamigibbs.com'
