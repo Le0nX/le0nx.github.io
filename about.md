@@ -12,9 +12,9 @@ permalink: /about/
 Hello,
 I am Denis,
 
-Currently, I am a M.Sc. student on Artificial Intelligence at the University of Edinburgh, what can I tell you about me?
+Currently, I am a software engineer in Moscow, what can I tell you about me?
 
-Clearly, I am very interested in iOS app development. 
+Clearly, I am very interested in iOS app development. Previously I was working on the helicopter-tpe UAV project in a small startup. 
 
 One important part of me is my curiosity, you can see all my unrelated projects. Basically, I am curious and love learning and sometimes I get carried away. I have ‘developed’ OS from scratch, love investing, created some web pages, hacked some cars, learn several languages, etc. etc.
 
