@@ -190,6 +190,7 @@ button.btn, input.btn {
   height: 505px;
   position: relative;
   background-image: url(/img/mikew.png);
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   @include bp-xsmall {
@@ -208,7 +209,7 @@ button.btn, input.btn {
 }
 
 .hero-content {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   display: table;
   position: absolute;
