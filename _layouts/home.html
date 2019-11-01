@@ -17,15 +17,20 @@
             <div class="break"></div>
 
             {% for post in paginator.posts %}
-              <div class="wow fadeIn">
-              {% if post.position == "left" %}
-                {% include content-left.html %}
-              {% endif %}
-
-              {% if post.position == "right" %}
-                {% include content-right.html %}
-              {% endif %}
+	      {% if post.type != "hidden" %}
+	      <a href="{{ post.url | prepend: site.baseurl }}">
+                <div class="wow fadeIn">
+		{% assign mod = forloop.index | modulo:2 %}
+		{% if mod == 0 %}
+                  {% include content-left.html %}
+                {% endif %}
+  
+                {% if mod == 1 %}
+                  {% include content-right.html %}
+                {% endif %}
               </div>
+	      </a>
+	      {% endif %}
             {% endfor %}
 
             {% include pagination.html %}

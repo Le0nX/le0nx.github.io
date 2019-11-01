@@ -11,6 +11,8 @@
 3.0 Posts
 4.0 Footer
 
+8.0 Markdown styles
+7.0 Content Styles (list of posts)
 --------------------------------------------------------------*/
 
 @import '../_sass/bootstrap';
@@ -38,6 +40,54 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+iframe {
+  display: block;
+  margin: 20px auto;
+}
+
+.footnotes {
+  font-size: 0.5em;
+}
+
+table {
+  padding: 0;
+  margin: 40px auto;
+}
+
+table tr {
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+table tr th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr th :first-child, table tr td :first-child {
+  margin-top: 0;
+}
+
+table tr th :last-child, table tr td :last-child {
+  margin-bottom: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   @extend %merriweather;
   font-weight: 700;
@@ -45,6 +95,11 @@ h1, h2, h3, h4, h5, h6 {
 
 article {
   margin: 5em 0;
+}
+
+.navbar-nav>li {
+  padding: 0;
+  font-size:initial;
 }
 
 p {
@@ -60,9 +115,29 @@ a {
   }
 }
 
+div > ul {
+  font-size: 1.3em;
+}
+
+div > ol {
+  font-size: 1.3em;
+}
+
+li {
+  padding: 5px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  padding: 25px 0;
+  max-width: 100%;
+}
+
 button.btn, input.btn {
+  width: 170px;
   padding: 12px 35px;
-  margin: 2em 0.5em;
+  margin: 0em 0.5em;
   border: solid 1px #d5e0e7;
   border-radius: 4px;
   color: #2E4453;
@@ -76,6 +151,9 @@ button.btn, input.btn {
   }
   i {
     padding-right: 0.5em;
+  }
+  @include bp-small {
+    width: auto;
   }
   @include bp-xsmall {
     @include horizontal-align;
@@ -108,19 +186,33 @@ button.btn, input.btn {
 	2.0 Home Hero
 --------------------------------------------------------------*/
 .hero-container {
-  margin: 10em 0 9em 0;
+  margin: 1em 0 1em 0;
+  height: 505px;
+  position: relative;
+  background-image: url(/img/mikew@2x.png);
+  background-position: center center;
+  background-repeat: no-repeat;
   @include bp-xsmall {
     margin: 5em 0 5em 0;
   }
   @include bp-small {
     margin: 5em 0 5em 0;
   }
+  a.home_link_hero {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
 }
 
 .hero-content {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   display: table;
+  position: absolute;
+  bottom: 0px;
   @include bp-medium {
     width: 100%;
   }
@@ -202,7 +294,7 @@ button.btn, input.btn {
 	3.0 Posts
 --------------------------------------------------------------*/
 #portfolio .container {
-  margin-top: 10em;
+  margin-top: 4em;
   @include bp-xsmall {
     margin-top: 2em;
   }
@@ -217,7 +309,7 @@ button.btn, input.btn {
 .section-title {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   &:after {
     content: '';
     position: absolute;
@@ -271,7 +363,7 @@ button.btn, input.btn {
       &:after {
         content: '';
         position: absolute;
-        top: 1.5em;
+        bottom: -0.7em;
         left: 0;
         width: 3em;
         height: 3px;
@@ -431,3 +523,24 @@ pre {
     .highlight .vg { color: #000000 } /* Name.Variable.Global */
     .highlight .vi { color: #000000 } /* Name.Variable.Instance */
     .highlight .il { color: #0000cf; font-weight: bold } /* Literal.Number.Integer.Long */
+    
+
+/*--------------------------------------------------------------
+	7.0 Content Styles (list of posts)
+--------------------------------------------------------------*/
+
+.content button.btn, .content input.btn {
+  width: auto;
+}
+
+/*--------------------------------------------------------------
+	8.0 Markdown styles
+--------------------------------------------------------------*/
+
+.post h1 {
+  padding: 20px 0;
+}
+
+.post hr {
+    margin: 40px;
+}
