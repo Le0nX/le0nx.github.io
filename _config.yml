@@ -16,11 +16,11 @@
 title: "Denis Nefedov" #"Hello. I'm Denis Nefedov"
 email: 'nefedov.d.d@gmail.com'
 description: ""
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://le0nx.github.io/site" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "" # the subpath of your site, e.g. /blog
+#url: "https://le0nx.github.io/site" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 'MastrSplyntr'
 github_username: 'Le0nX'
-medium_username: 'you-gotta-get-schwifty' #'blog.jamigibbs.com'
+medium_username: 'medium.com/you-gotta-get-schwifty' #'blog.jamigibbs.com'
 cv_url: 'https://drive.google.com/open?id=1UfQAz2f-HMMHdePmMLDUNDV-AZh3D50o'
 section_title: 'All'
 section_subtitle: "Here is a list of most of the things I have written/done/thought, enjoy."
@@ -38,8 +38,8 @@ plugins:
 ### Phantom settings
 paginate: 100
 footer_text: ' Powered by Jekyll with Phantom template by Jami Gibbs © Copyright Mike Woodcock.'
-admin_name: 'Mike.W'
-google_analytics: "UA-77835108-1" # Update with your own tracking ID
+#admin_name: 'Mike.W'
+#google_analytics: "UA-77835108-1" # Update with your own tracking ID
 enable_contact: false
 permalink: /:title/
 
