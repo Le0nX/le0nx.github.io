@@ -1,7 +1,7 @@
 ---
 layout: inner
 title: 'Memory management done right с сохранением Clean архитектуры'
-date: 2020-20-02 14:15:00
+date: 2020-02-20 14:15:00
 categories: development
 type: unrelated
 tags: ios swift medium
